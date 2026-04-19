@@ -210,6 +210,11 @@
       gap: 16px;
     }
 
+    .project-list {
+      display: grid;
+      gap: 16px;
+    }
+
     .card {
       min-height: 100%;
       padding: 20px;
@@ -221,6 +226,35 @@
     .card p {
       margin-bottom: 0;
       color: var(--muted);
+    }
+
+    .project-materials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 0;
+      list-style: none;
+      font-size: 15px;
+    }
+
+    .project-materials a,
+    .project-materials span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .project-materials span {
+      color: var(--muted);
+      font-weight: 400;
     }
 
     .resume-list {
@@ -354,18 +388,30 @@
       <div class="section-header">
         <h2>Projects</h2>
         <div class="section-body">
-          <div class="grid">
+          <div class="project-list">
             <article class="card">
-              <h3>OpenEMS Simulations</h3>
-              <p>Electromagnetic simulations for studying fields, structures, and system behavior before fabrication.</p>
+              <h3>Metallic Magnetic Calorimeters</h3>
+              <p>Low-temperature detector work focused on MMC device physics, readout considerations, and experimental performance.</p>
+              <ul class="project-materials" aria-label="Metallic Magnetic Calorimeters materials">
+                <li><span>Poster coming soon</span></li>
+                <li><span>Paper coming soon</span></li>
+              </ul>
             </article>
             <article class="card">
-              <h3>RF Transmission Lines</h3>
-              <p>Design and analysis of high-frequency transmission lines with attention to practical performance.</p>
+              <h3>Transition-Edge Sensors</h3>
+              <p>Device physics and measurements for TES systems operating in the low-temperature regime.</p>
+              <ul class="project-materials" aria-label="Transition-Edge Sensors materials">
+                <li><span>Poster coming soon</span></li>
+                <li><span>Paper coming soon</span></li>
+              </ul>
             </article>
             <article class="card">
-              <h3>Magnetic Field Modeling</h3>
-              <p>Visualization and modeling workflows for making magnetic field behavior easier to understand.</p>
+              <h3>SQUID Readout</h3>
+              <p>Superconducting quantum interference device readout work for sensitive low-temperature measurements.</p>
+              <ul class="project-materials" aria-label="SQUID Readout materials">
+                <li><span>Poster coming soon</span></li>
+                <li><span>Paper coming soon</span></li>
+              </ul>
             </article>
           </div>
         </div>
